@@ -8,6 +8,7 @@ repository-code: 'https://github.com/DevelopersToolbox/get-language-versions'
 abstract: some needs to go here
 keywords:
   - "Wolf Software"
+  - "Software"
 license: MIT
 authors:
   - name: "on behalf of Wolf Software"
