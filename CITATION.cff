@@ -3,13 +3,14 @@ title: Get language versions
 message: "If you use this software, please cite it as below."
 type: software
 version: 0.0.1
-date-released: 2024-5-16
+date-released: 2024-05-16
 repository-code: 'https://github.com/DevelopersToolbox/get-language-version'
 abstract: some needs to go here
 keywords:
   - Wolf Software
 license: MIT
 authors:
-- family-names: "TG"
-  given-names: "Wolf"
-  orcid: "https://orcid.org/0009-0007-0983-2072"
+  - name: "on behalf of Wolf Software"
+  - family-names: "Wolf"
+    given-names: "TG"
+    orcid: "https://orcid.org/0009-0007-0983-2072"

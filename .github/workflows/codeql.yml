@@ -8,12 +8,14 @@ on:
       - 'dependabot/**'
     paths-ignore:
       - '**/*.md'
+      - '**/*.cff'
 
   pull_request:
     branches:
       - '**'
     paths-ignore:
       - '**/*.md'
+      - '**/*.cff'
 
   schedule:
     - cron: '36 4 * * 1'

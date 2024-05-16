@@ -8,11 +8,13 @@ on:
       - 'dependabot/**'
     paths:
       - '**/*.md'
+      - '**/*.cff'
   pull_request:
     branches:
       - '**'
     paths:
       - '**/*.md'
+      - '**/*.cff'
 
 # Manage concurrency to prevent multiple instances of the workflow from running simultaneously on the same branch.
 # If a new run starts, it cancels any currently running instance.
@@ -82,6 +84,18 @@ jobs:
         env:
           EXCLUDE_FILES: "README.md"
 
+  validate-CITATION-cff:
+    name: Validate CITATION.cff
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+        
+    steps:
+      - name: Checkout
+        uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b # v4.1.5
+        
+      - name: Validate CITATION.cff
+        uses: dieghernan/cff-validator@4c19ae163bc427f66a5b69ddd4487cfbf5bec48d # v3
   #
   # You might ask yourself 'why are we using a wrapper function?' it is to make the branch protection rules easier to manage.
   #
@@ -91,6 +105,7 @@ jobs:
     needs:
       - awesomebot
       - markdown-lint
+      - validate-CITATION-cff
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository

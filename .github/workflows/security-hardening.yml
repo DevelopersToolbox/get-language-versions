@@ -8,11 +8,13 @@ on:
       - 'dependabot/**'
     paths-ignore:
       - '**/*.md'
+      - '**/*.cff'
   pull_request:
     branches:
       - '**'
     paths-ignore:
       - '**/*.md'
+      - '**/*.cff'
 
 # Manage concurrency to ensure that only one instance of this workflow runs at a time per branch/ref,
 # cancelling any in-progress instances when a new one starts.
