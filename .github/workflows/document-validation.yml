@@ -80,7 +80,7 @@ jobs:
         with:
           node-version: ${{ needs.get-node-version.outputs.version }}
       - name: Run Markdown Lint
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/markdown-lint/master/pipeline.sh)
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/markdown-lint/master/pipeline.sh) > $GITHUB_STEP_SUMMARY
         env:
           EXCLUDE_FILES: "README.md"
 
@@ -96,6 +96,7 @@ jobs:
         
       - name: Validate CITATION.cff
         uses: dieghernan/cff-validator@4c19ae163bc427f66a5b69ddd4487cfbf5bec48d # v3
+
   #
   # You might ask yourself 'why are we using a wrapper function?' it is to make the branch protection rules easier to manage.
   #

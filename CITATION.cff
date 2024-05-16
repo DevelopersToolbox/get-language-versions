@@ -4,10 +4,10 @@ message: "If you use this software, please cite it as below."
 type: software
 version: 0.0.1
 date-released: 2024-05-16
-repository-code: 'https://github.com/DevelopersToolbox/get-language-version'
+repository-code: 'https://github.com/DevelopersToolbox/get-language-versions'
 abstract: some needs to go here
 keywords:
-  - Wolf Software
+  - "Wolf Software"
 license: MIT
 authors:
   - name: "on behalf of Wolf Software"
