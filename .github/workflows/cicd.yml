@@ -35,8 +35,8 @@ jobs:
         id: get-language-versions
         with:
           language: "python"
+          min-version: 3.9
           remove-patch-version: true
-          max-versions: 3
 
   # Always included to handle check-jobs.sh
   shellcheck:
