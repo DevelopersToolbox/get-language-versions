@@ -1,4 +1,4 @@
-name: Documentation Validation
+name: Citation Validation
 
 # Triggers for the workflow include any push event that does not affect branches prefixed with 'dependabot/'
 # and any pull request to any branch in the repository.
