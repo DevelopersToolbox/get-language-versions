@@ -56,4 +56,4 @@ def system(message: str) -> None:
     Arguments:
         message (str): The message to display.
     """
-    print(f'[ {BOLD}{SYSTEM}System{RESET} ] {message}')
+    print(f'{BOLD}{SYSTEM}{message}{RESET}')
