@@ -4,6 +4,9 @@
 
 from setuptools import setup, find_packages
 
+with open('requirements.txt', 'r', encoding='UTF-8') as f:
+    required: list[str] = f.read().splitlines()
+
 with open("README.md", 'r', encoding='UTF-8') as f:
     long_description: str = f.read()
 
@@ -28,4 +31,5 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.8',
+    install_requires=required,
 )
