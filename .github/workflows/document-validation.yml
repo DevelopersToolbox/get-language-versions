@@ -80,7 +80,7 @@ jobs:
         with:
           node-version: ${{ needs.get-node-version.outputs.version }}
       - name: Run Markdown Lint
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/markdown-lint/master/pipeline.sh) > $GITHUB_STEP_SUMMARY
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/markdown-lint/master/pipeline.sh)
         env:
           EXCLUDE_FILES: "README.md"
 
