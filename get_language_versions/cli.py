@@ -9,7 +9,6 @@ line.
 import argparse
 import sys
 
-from argparse import ArgumentDefaultsHelpFormatter
 from types import SimpleNamespace
 
 from .config import create_configuration_from_arguments
@@ -29,7 +28,7 @@ def setup_arg_parser() -> argparse.ArgumentParser:
     """
     parser = argparse.ArgumentParser(prog=ARG_PARSER_PROG_NAME,
                                      add_help=False,
-                                     formatter_class=ArgumentDefaultsHelpFormatter,
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                      description=ARG_PARSER_DESCRIPTION,
                                      epilog=ARG_PARSER_EPILOG)
 
