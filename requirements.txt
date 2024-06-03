@@ -1,6 +1,6 @@
 beautifulsoup4==4.12.3
 colorama==0.4.6
-requests==2.32.2
+requests==2.32.3
 setuptools==69.5.1
 yaspin==3.0.2
 packaging==24.0
