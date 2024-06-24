@@ -1,7 +1,7 @@
 beautifulsoup4==4.12.3
 colorama==0.4.6
 requests==2.32.3
-setuptools==70.0.0
+setuptools==70.1.0
 yaspin==3.0.2
 packaging==24.1
 wolfsoftware.notify==0.1.0
