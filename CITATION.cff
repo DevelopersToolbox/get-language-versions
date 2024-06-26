@@ -2,10 +2,10 @@ cff-version: 1.2.0
 title: Get language versions
 message: "If you use this software, please cite it as below."
 type: software
-version: 0.1.1
+version: 0.1.2
 date-released: 2024-06-26
 repository-code: 'https://github.com/DevelopersToolbox/get-language-versions'
-abstract: some needs to go here
+abstract: Fetch up-to-date data on the latest version(s) available on Github Actions for a given set of languages.
 keywords:
   - "Wolf Software"
   - "Software"

@@ -12,7 +12,7 @@ with open("README.md", 'r', encoding='UTF-8') as f:
 
 setup(
     name='wolfsoftware.get-language-versions',
-    version='0.1.1',
+    version='0.1.2',
     packages=['wolfsoftware.get_language_versions'],
     entry_points={
         'console_scripts': [
@@ -21,7 +21,7 @@ setup(
     },
     author='Wolf Software',
     author_email='pypi@wolfsoftware.com',
-    description='A nice description will go here',
+    description='Fetch up-to-date data on the latest version(s) available on Github Actions for a given set of languages.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/DevelopersToolbox/get-language-verisons',
