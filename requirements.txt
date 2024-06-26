@@ -2,5 +2,5 @@ beautifulsoup4==4.12.3
 colorama==0.4.6
 requests==2.32.3
 yaspin==3.0.2
-packaging==24.0
+packaging==24.1
 wolfsoftware.notify==0.1.0
